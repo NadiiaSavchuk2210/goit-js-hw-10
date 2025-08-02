@@ -1,0 +1,67 @@
+.snackbar-form {
+  width: 100%;
+}
+.snackbar-form-label {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.snackbar-form-label .form-input {
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 40px;
+}
+
+.snackbar-form-fieldset {
+  margin-bottom: 24px;
+  padding: 20px 0 14px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.snackbar-form-fieldset:hover,
+.snackbar-form-fieldset:focus-within {
+  border-color: var(--dark-color);
+}
+
+.snackbar-form-radio-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.snackbar-form-radio {
+  width: 20px;
+  height: 20px;
+}
+
+.snackbar-form-btn {
+  width: 100%;
+  min-height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .snackbar-form {
+    max-width: 360px;
+    gap: 32px 8px;
+    justify-content: flex-start;
+  }
+
+  .snackbar-form-fieldset {
+    flex-direction: row;
+    gap: 54px;
+  }
+
+  .snackbar-form-radio-label:first-of-type {
+    padding-left: 26px;
+  }
+}

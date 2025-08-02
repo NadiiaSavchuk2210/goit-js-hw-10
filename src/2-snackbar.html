@@ -5,14 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
-      <div class="container">
+      <section class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Snackbar</h1>
-      </div>
+
+        <form class="form snackbar-form">
+          <label class="snackbar-form-label">
+            Delay (ms)
+            <input type="number" name="delay" class="form-input" required />
+          </label>
+
+          <fieldset class="snackbar-form-fieldset">
+            <legend class="snackbar-form-legend">State</legend>
+            <label class="snackbar-form-radio-label">
+              <input
+                type="radio"
+                name="state"
+                class="snackbar-form-radio"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="snackbar-form-radio-label">
+              <input
+                type="radio"
+                name="state"
+                class="snackbar-form-radio"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit" class="form-btn snackbar-form-btn" disabled>
+            Create notification
+          </button>
+        </form>
+      </section>
     </main>
 
     <script type="module" src="./js/2-snackbar.js"></script>
